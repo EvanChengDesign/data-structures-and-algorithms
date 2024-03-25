@@ -42,7 +42,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  arr.forEach(value => {
+    newArray.push(value.toUpperCase());
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,11 +60,15 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  return word.toUpperCase() + '!';
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
+  let newArray = [];
+  words.forEach(value => {
+    newArray.push(callback(value));
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -80,11 +88,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -106,7 +117,13 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let groceryList = [];
+  availableItems.forEach(item => {
+    if (item.available) {
+      groceryList.push(item.name);
+    }
+  });
+  return groceryList;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -123,9 +140,22 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr) => {
-  // Solution code here...
+const fizzbuzz = (numbers) => {
+  let output = [];
+  numbers.forEach(number => {
+    if (number % 3 === 0 && number % 5 === 0) {
+      output.push("Fizz Buzz");
+    } else if (number % 3 === 0) {
+      output.push("Fizz");
+    } else if (number % 5 === 0) {
+      output.push("Buzz");
+    } else {
+      output.push(number);
+    }
+  });
+  return output;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
