@@ -44,7 +44,11 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
-
+  let resultArray = [];
+  for (let number of arr) {
+    resultArray.push(Math.pow(2, number)); // Raising 2 to the power of the element
+  }
+  return resultArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
