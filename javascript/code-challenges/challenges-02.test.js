@@ -46,7 +46,7 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 const forLoopTwoToThe = (arr) => {
   let resultArray = [];
   for (let number of arr) {
-    resultArray.push(Math.pow(2, number)); // Raising 2 to the power of the element
+    resultArray.push(Math.pow(2, number));
   }
   return resultArray;
 };
@@ -58,8 +58,13 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
+  let resultArray = [];
+  arr.forEach(number => {
+    resultArray.push(Math.pow(2, number));
+  });
+  return resultArray;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
