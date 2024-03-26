@@ -9,17 +9,25 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 ------------------------------------------------------------------------------------------------ */
 
 const raisedToTheThird = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  arr.forEach(number => {
+    newArray.push(Math.pow(number, 3));
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1. 
+Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1.
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  arr.map(number => {
+    newArray.push(number++);
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
