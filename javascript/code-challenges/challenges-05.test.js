@@ -114,10 +114,10 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
-  // Solution code here...
+  let houses = arr.map(character => character.house);
   return houses;
 };
+
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
