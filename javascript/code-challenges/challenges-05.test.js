@@ -131,10 +131,11 @@ hasChildrenValues(characters, 'Cersei') will return true
 hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
-const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-
+const hasChildrenValues = (arr, characterName) => {
+  const character = arr.find(c => c.name === characterName);
+  return character && character.children && character.children.length > 0;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
