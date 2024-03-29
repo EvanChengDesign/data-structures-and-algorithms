@@ -42,7 +42,7 @@ function checkValues(obj, value) {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-You are given an object with names and their coresponding phone numbers that looks like this:
+You are given an object with names and their corresponding phone numbers that looks like this:
 {
   'Grace Hopper': '222-303-5938',
   'Ada Lovelace': '222-349-9842',
@@ -59,7 +59,7 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  return Object.entries(obj).map(([key, value]) => `${key}: ${value}`);
 };
 
 
