@@ -111,8 +111,12 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  return arr.reduce((accumulator, currentObject) => {
+    accumulator.push(currentObject.name);
+    return accumulator;
+  }, []);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
