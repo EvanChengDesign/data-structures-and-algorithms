@@ -8,7 +8,9 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
-  // Solution code here...
+  let chars = str.split('');
+  let startIndex =chars.length > 10 ? chars.length - 10 : 0;
+  return chars.splice(startIndex, chars.length - startIndex);
 }
 
 /* ------------------------------------------------------------------------------------------------
