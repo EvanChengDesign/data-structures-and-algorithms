@@ -27,10 +27,18 @@ For example:
 
 return: 23
 ------------------------------------------------------------------------------------------------ */
-const findMax = (matrix) => {
-  // Solution code here...
-};
+function findMax(matrix) {
+  let highestValue = -Infinity;
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j] > highestValue) {
+        highestValue = matrix[i][j];
+      }
+    }
+  }
 
+  return highestValue;
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
