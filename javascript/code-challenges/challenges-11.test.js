@@ -52,7 +52,15 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // Solution code here...
+  let happyArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].includes(":)")) {
+      happyArray.push(arr[i]);
+    }
+  }
+
+  return happyArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,11 +70,13 @@ Write a function named standardizePhoneNumbers that takes in an array of phone n
 
 For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
-
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
-};
+  let standardizedNumbers = arr.map(phoneNumber =>
+    phoneNumber.replace(/[^\d]/g, '')
+  );
 
+  return standardizedNumbers;
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
