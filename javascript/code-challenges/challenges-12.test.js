@@ -70,7 +70,10 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  return input.map(subArray =>
+    subArray.filter(number => typeof number === 'number' && number % 5 === 0)
+      .map(number => Math.pow(2, number))
+  );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -135,9 +138,12 @@ let starWarsData = [{
   gender: 'female'
 }];
 
-let findMaleAndFemale = (data) => {
-  // Solution code here...
+const findMaleAndFemale = (data) => {
+  return data.filter(character => character.gender === 'male' || character.gender === 'female')
+    .map(character => character.name)
+    .join(' and ');
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -145,8 +151,14 @@ CHALLENGE 6
 Write a function named findShortest that, given the Star Wars data from Challenge 6, uses any combination of filter, map and reduce to return the name of the character who is the shortest in height.
 ------------------------------------------------------------------------------------------------ */
 
-let findShortest = (data) => {
-  // Solution code here...
+const findShortest = (data) => {
+  return data.reduce((shortest, character) => {
+    if (!shortest || parseInt(character.height, 10) < parseInt(shortest.height, 10)) {
+      return character;
+    } else {
+      return shortest;
+    }
+  }, null).name;
 };
 
 /* ------------------------------------------------------------------------------------------------
