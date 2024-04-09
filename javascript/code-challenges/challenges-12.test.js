@@ -18,9 +18,10 @@ Becomes:
 ]
 ------------------------------------------------------------------------------------------------ */
 
-function transformToLis(obj){
-  // Solution code here...
+function transformToLis(obj) {
+  return Object.entries(obj).map(([key, value]) => `<li>${key}: ${value}</li>`);
 }
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
