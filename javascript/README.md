@@ -1,4 +1,4 @@
-## # Table of Contents: 401 Data Structures and Algorithms:
+### Table of Contents: 401 Data Structures and Algorithms:
 
 1. [Array - Reverse](./arrays/reverse/reverse-array.js)
-2. []()
+2. [Array - Insert Shift](./arrays/insertShift/README.md)
