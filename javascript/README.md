@@ -5,3 +5,4 @@
 3. [Array - Binary Search](./arrays/binarySearch/README.md)
 4. [Linked List](./linked-list/__tests__/README.md)
 5. [Linked List - Insert](./linked-list-insertions/README.md)
+6. [Linked List - kth](./linked-list-kth/README.md)
