@@ -6,3 +6,4 @@
 4. [Linked List](./linked-list/__tests__/README.md)
 5. [Linked List - Insert](./linked-list-insertions/README.md)
 6. [Linked List - kth](./linked-list-kth/README.md)
+7. [Linked List - Zipped](./linked-list-zip/README.MD)
