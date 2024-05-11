@@ -7,3 +7,4 @@
 5. [Linked List - Insert](./linked-list-insertions/README.md)
 6. [Linked List - kth](./linked-list-kth/README.md)
 7. [Linked List - Zipped](./linked-list-zip/README.MD)
+8. [Stacks & Queues](./stack-and-queue/README.md)
