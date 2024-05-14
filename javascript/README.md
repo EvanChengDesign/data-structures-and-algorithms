@@ -8,3 +8,5 @@
 6. [Linked List - kth](./linked-list-kth/README.md)
 7. [Linked List - Zipped](./linked-list-zip/README.MD)
 8. [Stacks & Queues](./stack-and-queue/README.md)
+9. [Stack & Queues - PseudoQueue](./stack-queue-pseudo/README.md)
+10. [Stack & Queues - Animal Shelter](./animal-shelter/README.md)
