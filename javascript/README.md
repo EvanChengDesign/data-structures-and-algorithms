@@ -10,3 +10,4 @@
 8. [Stacks & Queues](./stack-and-queue/README.md)
 9. [Stack & Queues - PseudoQueue](./stack-queue-pseudo/README.md)
 10. [Stack & Queues - Animal Shelter](./animal-shelter/README.md)
+11. [Stack & Queues - Brackets](./stack-queue-brackets/README.md)
