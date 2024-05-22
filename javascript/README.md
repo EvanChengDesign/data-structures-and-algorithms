@@ -14,3 +14,4 @@
 12. [Trees - Binary Search](./trees-binary-search/README.md)
 13. [Trees - Max](./trees-max/README.md)
 14. [Trees - Breadth First](./trees-breadth-first/README.md)
+15. [Trees - FizzBuzz](./trees-fizz-buzz/README.md)
