@@ -16,3 +16,4 @@
 14. [Trees - Breadth First](./trees-breadth-first/README.md)
 15. [Trees - FizzBuzz](./trees-fizz-buzz/README.md)
 16. [Insertion Sort](./insertion-sort/README.md)
+17. [Merge Sort](./merge-sort/README.md)
