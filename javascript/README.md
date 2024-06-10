@@ -18,4 +18,5 @@
 16. [Insertion Sort](./insertion-sort/README.md)
 17. [Merge Sort](./merge-sort/README.md)
 18. [Sorting Objects](./sorting-objects/README.md)
-19. [ Hash Tables](./hash-tables/README.md)
+19. [Hash Tables](./hash-tables/README.md)
+20. [Hash Tables - Repeated Word](./hash-tables-repeated-word/README.md)
