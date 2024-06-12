@@ -21,3 +21,4 @@
 19. [Hash Tables](./hash-tables/README.md)
 20. [Hash Tables - Repeated Word](./hash-tables-repeated-word/README.md)
 21. [Hash Tables - Common Values in Two Binary Trees](./hash-tables-intersection/README.md)
+22. [Hash Tables - Left Join](./hash-tables-left-join/README.md)
